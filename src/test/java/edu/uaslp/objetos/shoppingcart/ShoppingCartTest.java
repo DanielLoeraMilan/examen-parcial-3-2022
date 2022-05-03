@@ -6,6 +6,11 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import java.math.BigDecimal;
 import java.util.List;
 
+import edu.uaslp.objetos.shoppingcart.Exceptions.EmptyShoppingCartException;
+import edu.uaslp.objetos.shoppingcart.Exceptions.InvalidDataException;
+import edu.uaslp.objetos.shoppingcart.Exceptions.ItemNotFoundException;
+import edu.uaslp.objetos.shoppingcart.ShoppingCart.Item;
+import edu.uaslp.objetos.shoppingcart.ShoppingCart.ShoppingCart;
 import org.junit.jupiter.api.Test;
 
 public class ShoppingCartTest {
