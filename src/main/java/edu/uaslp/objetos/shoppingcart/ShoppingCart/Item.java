@@ -3,16 +3,16 @@ package edu.uaslp.objetos.shoppingcart.ShoppingCart;
 import java.math.BigDecimal;
 
 public class Item {
-    private String itemCode;
-    private String ProviderCode;
-    private int Quantity;
-    private BigDecimal UnitCost;
+    private String code;
+    private String providerCode;
+    private int quantity;
+    private BigDecimal unitCost;
 
     public Item(String itemCode, String providerCode, BigDecimal unitCost, int quantity) {
-        this.itemCode = itemCode;
-        ProviderCode = providerCode;
-        Quantity = quantity;
-        UnitCost = unitCost;
+        this.code = itemCode;
+        this.providerCode = providerCode;
+        this.quantity = quantity;
+        this.unitCost = unitCost;
     }
 
     public Item(){
@@ -20,34 +20,34 @@ public class Item {
     }
 
     public String getCode() {
-        return itemCode;
+        return code;
     }
 
     public void setCode(String code) {
-        itemCode = code;
+        this.code = code;
     }
 
     public String getProviderCode() {
-        return ProviderCode;
+        return providerCode;
     }
 
     public void setProviderCode(String providerCode) {
-        ProviderCode = providerCode;
+        this.providerCode = providerCode;
     }
 
     public int getQuantity() {
-        return Quantity;
+        return quantity;
     }
 
     public void setQuantity(int quantity) {
-        Quantity = quantity;
+        this.quantity = quantity;
     }
 
     public BigDecimal getUnitCost() {
-        return UnitCost;
+        return unitCost;
     }
 
     public void setUnitCost(BigDecimal unitCost) {
-        UnitCost = unitCost;
+        this.unitCost = unitCost;
     }
 }
